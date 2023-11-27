@@ -15,7 +15,7 @@ jobs:
         with:
           start: npx cypress run --record --key 3efc7bcd-5266-42ac-a0ff-890a9443d205
           browser: chrome
-        env:
+        #env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
           #CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
