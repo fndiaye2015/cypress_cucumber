@@ -22,5 +22,6 @@ module.exports = defineConfig({
     baseUrl: "https://learn.cypress.io/",
     specPattern: "**/*.feature",
     setupNodeEvents,
+    video: true,
   },
 });
