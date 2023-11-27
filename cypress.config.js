@@ -18,11 +18,11 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: '8ine31',
   e2e: {
     baseUrl: "https://learn.cypress.io/",
     specPattern: "**/*.feature",
     setupNodeEvents,
     video: true,
-    videosFolder: 'https://github.com/fndiaye2015/cypress_cucumber/tree/main/cypress/videos/',
   },
 });
