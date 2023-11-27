@@ -13,12 +13,12 @@ jobs:
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v6
         with:
-          #start: npx cypress run --record --key 3efc7bcd-5266-42ac-a0ff-890a9443d205
+          start: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
           browser: chrome
-        env:
+        # env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Creating a token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
         #   GITHUB_TOKEN: 
           #MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
