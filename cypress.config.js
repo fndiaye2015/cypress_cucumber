@@ -23,5 +23,6 @@ module.exports = defineConfig({
     specPattern: "**/*.feature",
     setupNodeEvents,
     video: true,
+    videosFolder: 'https://github.com/fndiaye2015/cypress_cucumber/tree/main/cypress/videos/',
   },
 });
