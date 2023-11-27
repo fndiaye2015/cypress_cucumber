@@ -1,0 +1,4 @@
+{
+  "learningButton": ".mt-10 > .inline-flex",
+  "course0": "[data-test='course-0']"
+}
